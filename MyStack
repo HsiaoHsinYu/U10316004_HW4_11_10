@@ -32,14 +32,16 @@ import java.util.*;
     }
     
     public class TestMyStack{
-        
+        //Main method
       public static void main(String[] args){
 	      System.out.print("Please enter five String:");
 	        Scanner input = new Scanner(System.in);
-          MyStack mystack = new MyStack();
+          MyStack mystack = new MyStack();//new object
+          //run forloop five times to let enter String
           for(int i = 1; i <= 5 ; i++){
             mystack.push(input.next());
           }
+          //make five String to print in reverse order
         while(!mystack.isEmpty() ){
           System.out.print( mystack.pop() + " ");
       }  
